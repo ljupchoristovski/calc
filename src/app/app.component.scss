@@ -1,0 +1,48 @@
+.container {
+    margin: 0;
+    background: #0000CD;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+label {
+    color: lightgrey;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.inputList {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+input {
+    height: 55px;
+    width: 100px;
+    border: none;
+    border:solid 1px #ccc;
+    border-radius: 10px;
+    background: #DCDCDC;
+    text-align: center;
+    font-size: 23px;
+    color: #696969;
+}
+.buttonList {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+button {
+    height: 30px;
+    width: 4rem;
+    color: lightgrey;
+    background: #4169E1;
+    cursor: pointer;
+}
+.total {
+    margin-top: 40px;
+    font-size: 60px;
+    color: whitesmoke;
+}
