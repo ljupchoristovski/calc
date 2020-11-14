@@ -3,8 +3,8 @@
   <div class="header"><label>Operations on Two Numbers</label></div>
 
   <div class="inputList">
-    <input OnlyNumber="true" type="number" [(ngModel)]="calcFirst" id="first">
-    <input OnlyNumber="true" type="number" [(ngModel)]="calcSecond" id="second">
+    <input OnlyNumber="true" type="number" [(ngModel)]="calcFirst" id="first" (change)="checkEmpty()">
+    <input OnlyNumber="true" type="number" [(ngModel)]="calcSecond" id="second" (change)="checkEmpty()">
   </div>
 
   <div class="buttonList">

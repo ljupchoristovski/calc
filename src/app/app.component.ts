@@ -34,4 +34,14 @@ export class AppComponent {
     this.calcFirst = 0;
     this.calcSecond = 0;
   }
+
+  checkEmpty() {
+    if(this.calcFirst === null) {
+      this.calcFirst = 0;
+    }
+
+    if(this.calcSecond === null) {
+      this.calcSecond = 0;
+    }
+  }
 }
