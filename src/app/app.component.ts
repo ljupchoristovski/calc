@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
+import { FormControl } from '@angular/forms';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +14,16 @@ export class AppComponent {
   calcSecond: number = 0;
   total = 0;
 
-  constructor(){}
+  public date: moment.Moment;
+  public minDate: moment.Moment;
+  public maxDate: moment.Moment;
+  public color: ThemePalette = 'primary';
+  public dateControl = new FormControl(moment());
+  public dateControlMinMax = new FormControl(moment());
+
+  constructor(){
+    this.date = moment();
+  }
 
   addNumbers(): any {
     this.total = this.calcFirst + this.calcSecond;
