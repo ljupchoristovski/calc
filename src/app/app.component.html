@@ -16,8 +16,17 @@
 
   <div class="total">{{total}}</div>
 
-  <div class="reset">
+  <div class="reset"  >
     <button (click)="reset()">Reset</button>
+    <mat-form-field>
+      <input matInput [ngxMatDatetimePicker]="picker" placeholder="Choose a date" [formControl]="dateControl"
+        [min]="minDate" [max]="maxDate" [disabled]="false">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <ngx-mat-datetime-picker #picker [showSpinners]="true" [showSeconds]="true"
+        [stepHour]="1" [stepMinute]="1" [stepSecond]="1" [touchUi]="false"
+        [color]="color" [enableMeridian]="true">
+      </ngx-mat-datetime-picker>
+    </mat-form-field>
   </div>
 
 </div>
